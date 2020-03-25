@@ -28,5 +28,5 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt
 # aptのワンライナー（更新自動化、LAMPの下準備）
 apt update && apt -y install unattended-upgrades nginx mariadb-server php7.4-fpm php7.4-curl php7.4-json php7.4-mbstring php7.4-mysql php-libsodium php-imagick php7.4-xml php7.4-zip
 
-# 再起動
-shutdown -r now
+# シャットダウン
+shutdown -h now
