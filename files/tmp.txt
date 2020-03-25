@@ -1,0 +1,2 @@
+/boot/cmdline.txt
+ipv6.disable=1
