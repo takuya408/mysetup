@@ -4,8 +4,8 @@
 rm /var/swap
 
 # nginxの設定
-sudo cp ./files/kawagoe /etc/nginx/sites-available/kawagoe
-sudo ln -s /etc/nginx/sites-available/kawagoe /etc/nginx/sites-enabled/default
+cp ./files/kawagoe /etc/nginx/sites-available/kawagoe
+ln -s /etc/nginx/sites-available/kawagoe /etc/nginx/sites-enabled/default
 
 # WordPressのダウンロード
 wget -P ~ --no-use-server-timestamps https://ja.wordpress.org/latest-ja.tar.gz
