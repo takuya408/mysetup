@@ -8,7 +8,7 @@ sudo cp ./files/kawagoe.gr.jp /etc/nginx/sites-available/kawagoe.gr.jp
 sudo ln -s /etc/nginx/sites-available/kawagoe.gr.jp /etc/nginx/sites-enabled
 
 # WordPressのダウンロード
-wget --no-use-server-timestamps https://ja.wordpress.org/latest-ja.tar.gz
+wget -P ~ --no-use-server-timestamps https://ja.wordpress.org/latest-ja.tar.gz
 tar xvzf latest-ja.tar.gz -C /var/www
 
 # 所有権の変更
