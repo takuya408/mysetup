@@ -19,7 +19,7 @@ mv /etc/logrotate.conf /etc/logrotate.conf.bak
 cp /（指定）/logrotate.conf /etc/logrotate.conf
 
 # swapの無効化
-apt purge dphys-swapfile
+apt -y purge dphys-swapfile
 
 # sury.orgの登録
 wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
