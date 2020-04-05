@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # macOS関係のファイルを削除
-rm -r /boot/.Spotlight-V100
+rm -r /boot/.fseventsd /boot/.Spotlight-V100
 
 # IPアドレスの固定
 mv /etc/dhcpcd.conf /etc/dhcpcd.conf.bak
