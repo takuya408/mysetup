@@ -3,10 +3,6 @@
 # swap領域の削除
 rm /var/swap
 
-# nginxの設定
-cp ./files/kawagoe /etc/nginx/sites-available
-ln -s /etc/nginx/sites-available/kawagoe /etc/nginx/sites-enabled/default
-
 # WordPressのダウンロード
 wget -P ~ --no-use-server-timestamps https://ja.wordpress.org/latest-ja.tar.gz
 tar xvzf ~/latest-ja.tar.gz -C /var/www
