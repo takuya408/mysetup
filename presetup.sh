@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# タイムゾーンの設定
-raspi-config
-
 # macOS関係のファイルを削除
 rm -r /boot/.Spotlight-V100
 
