@@ -29,4 +29,4 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt
 apt update && apt -y install unattended-upgrades nginx mariadb-server php7.4-fpm php7.4-curl php7.4-json php7.4-mbstring php7.4-mysql php-libsodium php-imagick php7.4-xml php7.4-zip
 
 # シャットダウン
-shutdown -h now
+shutdown -r now
