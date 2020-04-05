@@ -29,5 +29,9 @@ apt -y purge dphys-swapfile
 apt update
 apt -y --no-install-recommends install nginx-light libnginx-mod-http-geoip mariadb-server php-fpm php-curl php-mbstring php-mysql php-imagick php-xml php-zip ghostscript unattended-upgrades
 
+# nginxの設定
+cp ./files/kawagoe /etc/nginx/sites-available
+ln -s /etc/nginx/sites-available/kawagoe /etc/nginx/sites-enabled/default
+
 # シャットダウン
 shutdown -r now
