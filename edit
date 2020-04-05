@@ -1,4 +1,10 @@
+sudo raspi-config
 wget --no-use-server-timestamps https://github.com/takuya408/mysetup/archive/master.zip
 unzip master.zip
 cd mysetup-master
 sudo sh presetup.sh
+
+sudo sh setup.sh
+
+rm -r mysetup-master
+rm master.zip
