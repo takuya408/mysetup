@@ -18,9 +18,9 @@ cp ./files/logrotate.conf /etc/logrotate.conf
 # swapの無効化
 apt -y purge dphys-swapfile
 
-# 必要なパッケージのインストール（更新自動化、LAMPの下準備）
+# 必要なパッケージのインストール（LAMP環境、更新自動化）
 apt update
-apt -y --no-install-recommends install unattended-upgrades nginx mariadb-server php-fpm php-curl php-mbstring php-mysql php-imagick php-xml php-zip ghostscript
+apt -y --no-install-recommends install nginx mariadb-server php-fpm php-curl php-mbstring php-mysql php-imagick php-xml php-zip ghostscript unattended-upgrades
 
 # シャットダウン
 shutdown -r now
