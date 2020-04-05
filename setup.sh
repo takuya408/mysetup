@@ -9,7 +9,7 @@ sudo ln -s /etc/nginx/sites-available/kawagoe.gr.jp /etc/nginx/sites-enabled
 
 # WordPressのダウンロード
 wget -P ~ --no-use-server-timestamps https://ja.wordpress.org/latest-ja.tar.gz
-tar xvzf latest-ja.tar.gz -C /var/www
+tar xvzf ~/latest-ja.tar.gz -C /var/www
 
 # 所有権の変更
 chown -cR www-data:www-data /var/www/wordpress
