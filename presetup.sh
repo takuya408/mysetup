@@ -10,6 +10,10 @@ mkdir ~/backup
 mv /etc/dhcpcd.conf ~/backup
 cp ./files/dhcpcd.conf /etc/dhcpcd.conf
 
+# localhostの変更
+mv /etc/hosts ~/backup
+cp ./files/hosts /etc/hosts
+
 # syslogの外部受け入れを許可
 mv /etc/rsyslog.conf ~/backup
 cp ./files/rsyslog.conf /etc/rsyslog.conf
