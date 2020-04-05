@@ -9,3 +9,6 @@ sudo sh setup.sh
 passwd
 rm -r mysetup-master
 rm master.zip
+
+/boot/cmdline.txt
+ipv6.disable=1
