@@ -42,7 +42,6 @@ Unattended-Upgrade::Origins-Pattern {
 
         "o=${distro_id},n=${distro_codename}";
         "o=Raspberry Pi Foundation,n=${distro_codename}";
-        "o=deb.sury.org,n=${distro_codename}";
 };
 
 // Python regular expressions, matching packages to exclude from upgrading
