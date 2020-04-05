@@ -4,7 +4,7 @@
 rm /var/swap
 
 # nginxの設定
-cp ./files/kawagoe /etc/nginx/sites-available/kawagoe
+cp ./files/kawagoe /etc/nginx/sites-available
 ln -s /etc/nginx/sites-available/kawagoe /etc/nginx/sites-enabled/default
 
 # WordPressのダウンロード
