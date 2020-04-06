@@ -31,7 +31,8 @@ apt -y --no-install-recommends install nginx-light libnginx-mod-http-geoip maria
 
 # nginxの設定
 cp ./files/kawagoe /etc/nginx/sites-available
-ln -s /etc/nginx/sites-available/kawagoe /etc/nginx/sites-enabled/default
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/kawagoe /etc/nginx/sites-enabled
 
 # シャットダウン
 shutdown -r now
