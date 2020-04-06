@@ -4,8 +4,8 @@
 rm /var/swap
 
 # WordPressのダウンロード
-wget -P ~ --no-use-server-timestamps https://ja.wordpress.org/latest-ja.tar.gz
-tar xvzf ~/latest-ja.tar.gz -C /var/www
+wget -P /home/pi --no-use-server-timestamps https://ja.wordpress.org/latest-ja.tar.gz
+tar xvzf /home/pi/latest-ja.tar.gz -C /var/www
 
 # 所有権の変更
 chown -cR www-data:www-data /var/www/wordpress
