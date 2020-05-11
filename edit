@@ -1,5 +1,5 @@
 sudo raspi-config
-wget --no-use-server-timestamps https://github.com/takuya408/mysetup/archive/master.zip
+wget --no-use-server-timestamps https://github.com/takuya408/raspberry-pi-setup/archive/master.zip
 unzip master.zip
 cd mysetup-master
 sudo sh presetup.sh
@@ -7,8 +7,8 @@ sudo sh presetup.sh
 sudo sh setup.sh
 
 passwd
-rm -r mysetup-master
-rm master.zip
+sudo rm -r mysetup-master
+sudo rm master.zip
 
 /boot/cmdline.txt
 ipv6.disable=1
