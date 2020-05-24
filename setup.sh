@@ -27,7 +27,7 @@ apt -y purge dphys-swapfile
 
 # 必要なパッケージのインストール（LAMP環境、更新自動化）
 apt update
-apt -y --no-install-recommends install nginx-light libnginx-mod-http-geoip mariadb-server php-fpm php-curl php-mbstring php-mysql php-imagick php-xml php-zip ghostscript unattended-upgrades
+apt -y --no-install-recommends install nginx-light libnginx-mod-http-geoip mariadb-server php-fpm php-curl php-mbstring php-mysql php-imagick php-xml php-zip ghostscript unattended-upgrades goaccess
 
 # unattended-upgradesの設定
 mv /etc/apt/apt.conf.d/50unattended-upgrades /home/pi/backup
