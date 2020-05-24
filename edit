@@ -1,5 +1,5 @@
 sudo raspi-config
-wget --no-use-server-timestamps https://github.com/takuya408/raspberry-pi-setup/archive/master.zip
+wget --no-use-server-timestamps https://github.com/toco8/raspberry-pi-setup/archive/master.zip
 unzip master.zip
 cd mysetup-master
 sudo sh presetup.sh
