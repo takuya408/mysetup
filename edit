@@ -2,9 +2,9 @@ sudo raspi-config
 wget --no-use-server-timestamps https://github.com/toco8/raspberry-pi-setup/archive/master.zip
 unzip master.zip
 cd mysetup-master
-sudo sh presetup.sh
 
 sudo sh setup.sh
+sudo sh rm-swap.sh
 
 passwd
 sudo rm -r mysetup-master
